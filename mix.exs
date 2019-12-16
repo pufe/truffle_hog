@@ -25,4 +25,22 @@ defmodule TruffleHog.MixProject do
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
     ]
   end
+
+  defp description do
+    """
+    Provides a method to search for matches within a list of documents using TF-IDF.
+    """
+  end
+
+  defp package do
+    [
+      name: "truffle_hog",
+      organization: "quero",
+      files: ~w(lib priv .formatter.exs mix.exs README* readme* LICENSE*
+                license* CHANGELOG* changelog* src),
+      licenses: ["MIT"],
+      links: %{"GitHub" => "https://github.com/pufe/truffle_hog"},
+      source_url: "https://github.com/pufe/truffle_hog"
+    ]
+  end
 end
